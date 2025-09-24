@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You – Partners</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: linear-gradient(135deg, #0a0f1c, #0c1224);
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 40px;
+      border-radius: 16px;
+      max-width: 520px;
+    }
+    .icon {
+      font-size: 60px;
+      color: #22c55e;
+      margin-bottom: 16px;
+    }
+    h1 {
+      color: #22c55e;
+      margin-bottom: 18px;
+    }
+    p {
+      margin-bottom: 20px;
+      color: #cbd5e1;
+    }
+    a {
+      color: #0A66C2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .countdown {
+      font-weight: bold;
+      color: #22c55e;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="icon">✔️</div>
+    <h1>Thank You for Partnering with Us!</h1>
+    <p>Your partnership inquiry has been submitted successfully.<br>
+       Our team will review your details and get back to you soon.</p>
+    <p>You will be redirected to the Home page in 
+       <span class="countdown" id="timer">15</span> seconds...</p>
+    <p><a href="index_inline.html">← Back to Home</a></p>
+  </div>
+
+  <script>
+    let seconds = 15;
+    const timerElement = document.getElementById("timer");
+
+    const countdown = setInterval(() => {
+      seconds--;
+      timerElement.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(countdown);
+        window.location.href = "index_inline.html";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

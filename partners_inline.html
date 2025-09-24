@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partners • UK → Saudi Expansion</title>
+<style>
+:root{
+  --primary:#0A66C2;
+  --bg:#0a0f1c;
+  --bg2:#0c1224;
+  --card:rgba(255,255,255,.03);
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+  --accent:#22c55e;
+  --border:rgba(255,255,255,.08);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{max-width:1140px;margin:0 auto;padding:0 20px}
+.nav{position:sticky;top:0;z-index:40;background:rgba(10,15,28,.6);backdrop-filter: blur(10px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+.menu{display:flex;gap:18px}
+.menu a{padding:10px 12px;border-radius:10px;color:#cbd5e1}
+.menu a.active,.menu a:hover{background:rgba(255,255,255,.06)}
+.hero-mini{padding:90px 0 50px;border-bottom:1px solid var(--border);
+  background: radial-gradient(900px 600px at 90% -10%, rgba(34,197,94,.18) 0%, rgba(34,197,94,0) 60%);
+}
+.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:#cbd5e1;font-size:12px;margin-bottom:16px;background:rgba(255,255,255,.03)}
+h1{font-size:clamp(32px,5vw,54px);line-height:1.1;margin:0 0 14px}
+.lead{font-size:clamp(16px,2.3vw,20px);color:#cbd5e1;max-width:760px}
+section{padding:74px 0;border-top:1px solid var(--border)}
+h2{font-size:28px;margin:0 0 18px}
+p{color:#cbd5e1}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:26px}
+@media(max-width:900px){.split{grid-template-columns:1fr}}
+.list{margin:0;padding-left:18px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px}
+.card h3{margin:0 0 12px;font-size:20px}
+.form input,.form textarea{width:100%;padding:12px;border-radius:10px;border:1px solid var(--border);background:rgba(255,255,255,.04);color:#fff;margin:6px 0 12px}
+.btn{padding:12px 20px;border-radius:12px;font-weight:700;border:1px solid transparent;transition:.2s;cursor:pointer}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{filter:brightness(1.08)}
+.small{font-size:12px;color:#94a3b8}
+.partner-logos{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));align-items:center}
+.partner-logo{width:100%;height:60px;background:rgba(255,255,255,0.05);border:1px dashed rgba(255,255,255,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:14px}
+.footer{padding:30px 0;color:#94a3b8;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="logo">
+      <svg width="160" height="24" viewBox="0 0 360 56" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="360" y2="56" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#22C55E"/>
+            <stop offset="1" stop-color="#0A66C2"/>
+          </linearGradient>
+        </defs>
+        <rect x="2" y="8" width="44" height="40" rx="10" fill="url(#g)" opacity="0.2" stroke="url(#g)"/>
+        <path d="M12 28h12l-6-6m6 6-6 6" stroke="url(#g)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M34 28h8" stroke="url(#g)" stroke-width="2" stroke-linecap="round"/>
+        <text x="58" y="36" font-family="Inter, Segoe UI, Arial" font-size="18" font-weight="800" fill="url(#g)">UK → Saudi Expansion</text>
+      </svg>
+    </div>
+    <nav class="menu">
+      <a href="index_inline.html">Home</a>
+      <a href="about_inline.html">About</a>
+      <a href="services_inline.html">Services</a>
+      <a href="partners_inline.html" class="active">Partners</a>
+      <a href="contact_inline.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<section class="hero-mini">
+  <div class="container">
+    <div class="badge">Partners</div>
+    <h1>Our Partners</h1>
+    <p class="lead">Banking, legal, HR, and industry organizations — all aligned to accelerate your Saudi market entry.</p>
+  </div>
+</section>
+
+<section class="container">
+  <h2>Featured Partners</h2>
+  <div class="partner-logos">
+    <div class="partner-logo">Logo</div>
+    <div class="partner-logo">Logo</div>
+    <div class="partner-logo">Logo</div>
+    <div class="partner-logo">Logo</div>
+  </div>
+</section>
+
+<section class="container split">
+  <div>
+    <h2>Become a Partner</h2>
+    <p>We collaborate with banks, law firms, HR providers, and sector specialists across the UK and Saudi Arabia. If you enable faster, compliant market entry, let’s talk.</p>
+    <ul class="list">
+      <li>Co-branded guides & events</li>
+      <li>Shared deal pipeline</li>
+      <li>On-the-ground delivery</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Partner Inquiry</h3>
+    <form id="partnerForm" class="form" action="https://formspree.io/f/xvgbnqzy" method="POST">
+      <label>Company</label>
+      <input type="text" name="company" placeholder="Company name" required>
+      
+      <label>Website</label>
+      <input type="url" name="website" placeholder="https://">
+      
+      <label>Contact Email</label>
+      <input type="email" name="email" placeholder="you@company.com" required>
+      
+      <label>Capabilities</label>
+      <textarea name="capabilities" rows="5" placeholder="Tell us how you can support UK→Saudi market entry…"></textarea>
+      
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    <p class="small">By submitting, you agree to be contacted regarding partnership opportunities.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="logo">
+      <svg width="160" height="24" viewBox="0 0 360 56" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="360" y2="56" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#22C55E"/>
+            <stop offset="1" stop-color="#0A66C2"/>
+          </linearGradient>
+        </defs>
+        <rect x="2" y="8" width="44" height="40" rx="10" fill="url(#g)" opacity="0.2" stroke="url(#g)"/>
+        <path d="M12 28h12l-6-6m6 6-6 6" stroke="url(#g)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M34 28h8" stroke="url(#g)" stroke-width="2" stroke-linecap="round"/>
+        <text x="58" y="36" font-family="Inter, Segoe UI, Arial" font-size="18" font-weight="800" fill="url(#g)">UK → Saudi Expansion</text>
+      </svg>
+    </div>
+    <div class="small">© 2025. All rights reserved. • info@uk2saudi.com</div>
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById("partnerForm");
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        window.location.href = "thankyou.html"; 
+      } else {
+        alert("There was a problem submitting the form.");
+      }
+    }).catch(error => {
+      alert("Network error, please try again later.");
+    });
+  });
+</script>
+
+</body>
+</html>
