@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Sea Advisors | Global Strategy</title>
+    <style>
+        :root {
+            --gold: #C5A059;
+            --dark: #020617;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; }
+
+        body { 
+            background: var(--dark); 
+            color: white; 
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at 50% 50%, rgba(197, 160, 89, 0.05) 0%, transparent 80%);
+        }
+
+        /* Navigation */
+        nav {
+            padding: 30px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: 900; letter-spacing: -1px; }
+        .logo span { color: var(--gold); display: block; font-size: 10px; letter-spacing: 4px; font-weight: normal; }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 5%;
+        }
+
+        .badge {
+            font-size: 10px;
+            letter-spacing: 3px;
+            border: 1px solid var(--gold);
+            padding: 8px 20px;
+            border-radius: 50px;
+            color: var(--gold);
+            margin-bottom: 30px;
+        }
+
+        h1 { font-size: clamp(3rem, 10vw, 6rem); line-height: 0.9; margin-bottom: 20px; font-weight: 900; }
+        h1 span { color: var(--gold); }
+
+        p { max-width: 600px; color: #64748b; font-size: 1.2rem; margin-bottom: 40px; }
+
+        /* Form Section */
+        .contact-section {
+            padding: 100px 5%;
+            background: rgba(255, 255, 255, 0.02);
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-card {
+            background: rgba(2, 6, 23, 0.8);
+            border: 1px solid var(--border);
+            padding: 50px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .contact-card h2 { margin-bottom: 30px; font-size: 2rem; }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border);
+            color: white;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        input:focus { border-color: var(--gold); }
+
+        button {
+            width: 100%;
+            padding: 20px;
+            background: var(--gold);
+            color: black;
+            border: none;
+            font-weight: 900;
+            cursor: pointer;
+            border-radius: 8px;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        button:hover { background: white; transform: translateY(-3px); }
+
+        footer {
+            padding: 50px 5%;
+            text-align: center;
+            font-size: 12px;
+            color: #475569;
+            letter-spacing: 2px;
+        }
+
+        /* Spotlight Effect */
+        #spotlight {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="spotlight"></div>
+
+    <nav>
+        <div class="logo">RED SEA ADVISORS <span>GLOBAL STRATEGY</span></div>
+        <div style="font-size: 12px; opacity: 0.6;">RIYADH • DUBAI • AMMAN</div>
+    </nav>
+
+    <section class="hero">
+        <div class="badge">LAUNCHING EARLY 2026</div>
+        <h1>BEYOND THE <br><span>HORIZON.</span></h1>
+        <p>Architecting the next era of strategic dominance. We deliver clarity where others see complexity.</p>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-card">
+            <h2>Initialize Access</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Business Email" required>
+                <textarea rows="4" placeholder="Brief Inquiry"></textarea>
+                <button type="submit">REQUEST PRIORITY ACCESS</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 RED SEA ADVISORS. ALL RIGHTS RESERVED.
+    </footer>
+
+    <script>
+        // Interactive Spotlight
+        document.addEventListener('mousemove', (e) => {
+            const spotlight = document.getElementById('spotlight');
+            spotlight.style.background = `radial-gradient(600px at ${e.clientX}px ${e.clientY}px, rgba(197, 160, 89, 0.07), transparent 80%)`;
+        });
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Your request has been transmitted. Our advisors will contact you shortly.');
+        });
+    </script>
+</body>
+</html>
